@@ -1,0 +1,69 @@
+body {
+    background: #888;
+    color: #222;
+}
+
+.viewport {
+    background: #eee;
+}
+
+.main-header {
+    background: #aaa;
+    color: #fff;
+}
+
+.clock {
+    background: #fff;
+    border-color: #aaa;
+}
+
+.ms {
+    color: #aaa;
+}
+
+input, select, button {
+    background: #fff;
+    border-color: #aaa !important;
+}
+
+input:disabled, button:disabled {
+    color: #aaa;
+    border-color: #eee;
+}
+
+input:focus, button:focus, !button:disabled:focus {
+    background: #eee;
+    border-color: #555;
+}
+
+input:hover, button:hover, !button:disabled:hover {
+    background: #ccc;
+}
+
+input:active, button:active {
+    color: #fff;
+    background: #555;
+}
+
+button.active {
+    color: #fff;
+    background: #0066ff;
+}
+
+#start.ready {
+    color: #009900;
+}
+
+#start.active, #start:focus {
+    color: #fff;
+    background: #009900;
+}
+
+#stop.ready {
+    color: #555;
+}
+
+#stop.active, #stop:focus {
+    color: #fff;
+    background: #cc0000
+}

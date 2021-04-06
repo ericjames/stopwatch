@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    transition: all 300ms ease-in;
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+}
+
+#notifier {
+    position: absolute;
+    bottom: 0;
+    height: 1em;
+    width: 100%;
+    opacity: 0;
+}
+
+.play {
+    animation: flashbar 800ms 0ms 1 ease-out;
+}
+
+@keyframes flashbar {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+div {
+    overflow: hidden;
+}
+
+*:focus {
+    outline: 0;
+}
+
+body {
+    font: 400 95%/1em "Helvetica Neue", Helvetica;
+}
+
+.viewport {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.main-header {
+    min-height: 5vh;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 0 0.5em 0;
+    font-size: 0.8em;
+}
+
+.main-header h1 {
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.panel {
+    padding: 0.5em;
+    position: relative;
+}
+
+.clock {
+    position: relative;
+    padding: 0.2em 0 0.5em 0;
+    width: auto;
+    border: 1px solid;
+    text-align: center;
+    font: 400 6em/1.5em "Helvetica Neue";
+}
+
+.digit, .separator {
+    display: inline-block;
+    letter-spacing: -0.2em;
+    vertical-align: middle;
+}
+
+.ms {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.6em;
+    margin-left: 0.1em;
+}
+
+.clock .message {
+    font-size: 1.5em;
+}
+
+.input-pad {
+    float: left;
+    width: 100%;
+    min-height: 60px;
+}
+
+.clock-controls {}
+
+.option-controls {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.option {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 0.25em;
+    text-align: center;
+}
+
+.option h3 {
+    padding: 0 0 0.5em 0;
+}
+
+input, select {
+    vertical-align: middle;
+    padding: 0 0.2em 0 0.2em;
+    border: 1px solid;
+    min-height: 44px;
+    min-width: 50px;
+    font-size: 2em;
+}
+
+input[type="submit"] {
+    font-weight: 600;
+}
+
+.control {
+    font-size: 2em;
+    border: 0;
+    padding: 0.5em;
+    height: 46px;
+    min-height: 46px;
+    min-width: 56px;
+    margin-bottom: 4px;
+}
+
+.button {
+    border: 1px solid;
+    border-radius: 0.5em;
+}
+
+.clock-controls .control {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 0.5em;
+    vertical-align: top;
+    border: 1px solid;
+    width: 49.1%;
+}
+
+.option button {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.start-button, .stop-button {
+    min-height: 4em;
+}

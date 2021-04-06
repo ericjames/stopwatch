@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            Workout Stop Watch
+        </title>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="Free workout stopwatch in your browser, phone, tablet, etc" name="description"/>
+        <meta content="Free Online Workout Stop Watch Timer count down iphone phone ipad" name="keywords"/>
+        <meta content="Eric James" name="author"/>
+        <link href="normalize-3.0.2.css" rel="stylesheet" type="text/css"/>
+        <link href="main.css" rel="stylesheet" type="text/css"/>
+        <link href="theme-dark.css" rel="stylesheet" role="theme" type="text/css"/>
+        <script src="jquery-1.11.3.min.js" type="text/javascript">
+        </script>
+        <script src="stopwatchr.js" type="text/javascript">
+        </script>
+        <script src="app.js" type="text/javascript">
+        </script>
+    </head>
+</html>
+<body>
+    <section class="viewport">
+        <header class="main-header">
+            <h1>
+                countdown interval watch
+            </h1>
+        </header>
+        <div class="panel" id="clock">
+            <div class="clock">
+                <div id="notifier">
+                </div>
+                <span class="digit active">
+                    0
+                </span>
+                <span class="digit active">
+                    0
+                </span>
+                <span class="separator">
+                    :
+                </span>
+                <span class="digit active">
+                    0
+                </span>
+                <span class="digit active">
+                    0
+                </span>
+                <div class="ms" id="mscounter">
+                    00
+                </div>
+            </div>
+        </div>
+        <div class="panel popup" id="inputpad">
+            <div class="input-pad">
+                <button class="control number">
+                    1
+                </button>
+                <button class="control number">
+                    2
+                </button>
+                <button class="control number">
+                    3
+                </button>
+                <button class="control number">
+                    4
+                </button>
+                <button class="control number">
+                    5
+                </button>
+                <button class="control number">
+                    6
+                </button>
+                <button class="control number">
+                    7
+                </button>
+                <button class="control number">
+                    8
+                </button>
+                <button class="control number">
+                    9
+                </button>
+                <button class="control number">
+                    0
+                </button>
+                <button class="control" id="clear" style="min-width: 3.8em">
+                    Clear
+                </button>
+            </div>
+        </div>
+        <div class="panel" id="clockcontrol">
+            <div class="clock-controls">
+                <button class="button control start-button" disabled="" id="start">
+                    START
+                </button>
+                <!-- <button id="stop" class="button control stop-button" disabled>STOP</button> -->
+            </div>
+        </div>
+        <div class="panel popup" id="options">
+            <div class="option-controls">
+                <div class="option">
+                    <h3>
+                        Repeat
+                    </h3>
+                    <button class="control" data-attr="repeat" id="repeat">
+                        On
+                    </button>
+                    <!--                    <button id="repeatsound" data-attr="repeatsound" class="control">Sound</button> -->
+                </div>
+                <div class="option">
+                    <h3>
+                        Rest Every
+                    </h3>
+                    <select id="restperiod">
+                        <option>
+                            --
+                        </option>
+                        <option>
+                            15 sec
+                        </option>
+                        <option>
+                            30 sec
+                        </option>
+                        <option>
+                            1 min
+                        </option>
+                        <option>
+                            2 min
+                        </option>
+                        <option>
+                            5 min
+                        </option>
+                        <option>
+                            10 min
+                        </option>
+                    </select>
+                </div>
+                <div class="option">
+                    <h3>
+                        Click Every
+                    </h3>
+                    <select id="intervalperiod">
+                        <option value="">
+                            --
+                        </option>
+                        <option value="15">
+                            15 sec
+                        </option>
+                        <option value="30">
+                            30 sec
+                        </option>
+                        <option value="60">
+                            1 min
+                        </option>
+                        <option value="120">
+                            2 min
+                        </option>
+                        <option value="300">
+                            5 min
+                        </option>
+                        <option value="600">
+                            10 min
+                        </option>
+                    </select>
+                </div>
+                <div class="option">
+                    <h3>
+                        Theme
+                    </h3>
+                    <select id="theme">
+                        <option value="theme.css">
+                            Normal
+                        </option>
+                        <option value="">
+                            Minimal
+                        </option>
+                        <option value="theme-inverted.css">
+                            Inverted
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <a class="button" href="" id="feedback">
+                Send Feedback
+            </a>
+        </footer>
+    </section>
+</body>
